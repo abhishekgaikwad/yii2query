@@ -117,7 +117,7 @@ class Query extends Component implements QueryInterface
     public function createCommand($db = null)
     {
         if ($db === null) {
-            $db = Yii::$app->getDb();
+            $db = \base\Connection::$connection ;
         }
         list ($sql, $params) = $db->getQueryBuilder()->build($this);
 
