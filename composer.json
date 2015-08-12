@@ -1,0 +1,24 @@
+{
+    "name": "yiisoft/yii2-dev",
+    "description": "Yii PHP Framework Version 2 - Development Package",
+    "keywords": [
+        "yii2",
+        "framework"
+    ],
+    "homepage": "http://www.yiiframework.com/",
+    "type": "yii2-extension",
+    "license": "BSD-3-Clause",
+    "minimum-stability": "dev",
+    "require": {
+        "php": ">=5.4.0",
+        "ext-mbstring": "*"
+    },
+    "autoload": {
+        "psr-4": {
+            "cd\\": "framework/"
+        }
+    },
+    "bin": [
+        "framework/yii"
+    ]
+}
