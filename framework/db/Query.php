@@ -117,7 +117,7 @@ class Query extends Component implements QueryInterface
     public function createCommand($db = null)
     {
         if ($db === null) {
-            $db = \base\Connection::$connection ;
+            $db = \api\base\Connection::$connection ;
         }
         list ($sql, $params) = $db->getQueryBuilder()->build($this);
 
